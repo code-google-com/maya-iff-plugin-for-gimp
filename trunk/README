@@ -1,0 +1,52 @@
+
+LICENCE
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+ABOUT
+
+This plug-in reads and writes the Maya IFF format in the GIMP (GNU 
+Image Manipulation Program).  Only RGB format  files are supported,
+with an optional alpha channel.
+
+This plug-in will also read in zbuffer data from Maya IFF files. 
+Maya IFF  files store the zbuffer information as 32 bit data.  This
+plug-in normalizes that  data down into an 8 bit range and stores it
+in an extra layer.  You WILL lose  precision. So, it is only
+possible to read in zbuffer data.  It is NOT stored out again.
+
+REQUIREMENTS
+
+This plug-in is compiled on IRIX 6.5 for use with the precompiled
+version of the GIMP that is distributed by SGI (see below).  If you
+use any other version of  IRIX or the GIMP then chances are that
+this plug-in will not work.
+
+INSTALLATION
+
+  1.install the gimp 1.04 package from the SGI freeware site 
+    http://freeware.sgi.com
+  2.copy the plug-in file "MayaIFF" to one of these
+     two places:
+          ~/.gimp/plug-ins
+          /usr/freeware/lib32/gimp/1.0/plug-ins
+  3.run the gimp
+  
+SOURCE
+
+The source is provided in case you wish to build this plug-in for a
+different platform or version of IRIX or the GIMP.
+
+                             
