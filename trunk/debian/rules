@@ -1,13 +1,15 @@
 #!/usr/bin/make -f
 
-package=gimp2.0-mayaiff
+package=gimp2.2-mayaiff
 object=MayaIFF
-gimp_version=2.0
+gimp_version=2.3
+install_gimp_version=2.0
 root=debian/tmp
+gimptool=gimptool-2.0
 
 build:
 	$(checkdir)
-	gimptool-$(gimp_version) --build src/$(object).c
+	$(gimptool) --build src/$(object).c
 
 clean:
 	rm -fr *~ src/*~ $(root) debian/*~ debin/files* debian/substvars
@@ -19,11 +21,11 @@ binary-arch:	checkroot build
 	rm -fr $(root)
 	install -d $(root)/DEBIAN\
 		-d $(root)/usr/share/doc/$(package)\
-		-d $(root)/usr/lib/gimp/$(gimp_version)/plug-ins\
+		-d $(root)/usr/lib/gimp/$(install_gimp_version)/plug-ins\
 		-d $(root)/usr/share/gimp/scripts\
 		-d $(root)/usr/bin/
 	strip $(object)
-	cp $(object) $(root)/usr/lib/gimp/$(gimp_version)/plug-ins
+	cp $(object) $(root)/usr/lib/gimp/$(install_gimp_version)/plug-ins
 	cp README* $(root)/usr/share/doc/$(package)/.
 	cp ChangeLog $(root)/usr/share/doc/$(package)/changelog
 	gzip -9 $(root)/usr/share/doc/$(package)/changelog

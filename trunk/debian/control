@@ -1,13 +1,13 @@
-Source: gimp2.0-mayaiff
+Source: gimp2.2-mayaiff
 Priority: optional
 Section: graphics
 maintainer: Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>
 Standards-Version: 1.0
 
-Package: gimp2.0-mayaiff
-Architecture: i386
+Package: gimp2.2-mayaiff
+Architecture: i386 amd64
 Priority: optional
-Depends: libgimp2.0, gimp2.0
-Description: a gimp 2.0 plugin for reading/writing Alias|Wavefront Maya's IFF
+Depends: libgimp2.0(>=2.2), gimp(>=2.2)
+Description: a gimp 2.4 plugin for reading/writing Alias|Wavefront Maya's IFF
  This plugin was written by Mike Taylor (mtaylor@aw.sgi.com). I modified to
- adapt to gimp-1.2, then to gimp-1.3, gimp-2.0.
+ adapt to gimp-1.2, then to gimp-1.3, gimp-2.0, gimp-2.2, gimp-2.4.
