@@ -1,5 +1,11 @@
-gimp2.2-mayaiff (1.0-0) unstable; urgency=low
+gimp2.4-mayaiff (1.0-1) unstable; urgency=low
 
-  * back port from gimp2.4-mayaiff
+  * test build (kill asserion in get_long)
 
- -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Sat,  5 Aug 2006 03:21:10 +0900
+ -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Tue, 17 Jan 2006 14:50:50 +0900
+
+gimp2.4-mayaiff (1.0-0) unstable; urgency=low
+
+  * rebuild for gimp-2.4 and rename the name
+
+ -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Sat, 31 Dec 2005 11:30:08 +0900
