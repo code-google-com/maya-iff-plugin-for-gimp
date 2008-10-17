@@ -1,5 +1,6 @@
 2008-10-17  Shuji Narazaki  <narazaki@cs.cis.nagasaki-u.ac.jp>
 
+	* src/MayaIFF.c: update ident string
 	* src/MayaIFF.c: uses 'Autodesk' instead of 'Alias|Wavefront'
 	* src/Makefile: uses gimptool-2.0
 

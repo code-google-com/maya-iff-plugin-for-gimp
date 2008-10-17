@@ -3,6 +3,7 @@
  * Maya IFF image reading and writing code 
  * Copyright (C) 1997-1999 Mike Taylor
  * (email: mtaylor@aw.sgi.com, WWW: http://reality.sgi.com/mtaylor)
+ * Copyright (C) 2008 Shuji Narazaki
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -53,7 +54,7 @@
  *
  */
  
-static char ident[] = "@(#) GIMP Maya IFF (Alias|Wavefront) image file-plugin v1.3  21-dec-99";
+static char ident[] = "@(#) GIMP Autodesk Maya IFF image file-plugin v1.3  2008-10-17--01";
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -62,8 +63,6 @@ static char ident[] = "@(#) GIMP Maya IFF (Alias|Wavefront) image file-plugin v1
 #include <sys/stat.h>
 #include <gtk/gtk.h>
 #include <libgimp/gimp.h>
-/* #include <libgimp/gimpcompat.h> */
-
 #include <assert.h>
 
 /* #define IFF_DEBUG */
