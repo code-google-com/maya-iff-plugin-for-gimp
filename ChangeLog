@@ -1,3 +1,7 @@
+2006-01-17  Shuji Narazaki  <narazaki@cs.cis.nagasaki-u.ac.jp>
+
+	* src/MayaIFF.c (CHECK_TAG): use cast for str2long
+	* src/MayaIFF.c (begin_write_chunk): change signess of args
 2004-02-06  Shuji Narazaki  <narazaki@cs.cis.nagasaki-u.ac.jp>
 
 	* src/MayaIFF.c (PLUG_IN_INFO): cast validly
