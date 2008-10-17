@@ -1,10 +1,10 @@
-Source: gimp2.6-mayaiff
+Source: gimp-mayaiff
 Priority: optional
 Section: graphics
 maintainer: Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>
 Standards-Version: 1.0
 
-Package: gimp2.6-mayaiff
+Package: gimp-mayaiff
 Architecture: i386 amd64
 Priority: optional
 Depends: libgimp2.0(>=2.6), gimp(>=2.6)

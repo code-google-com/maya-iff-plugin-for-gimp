@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-package=gimp2.6-mayaiff
+package=gimp-mayaiff
 object=MayaIFF
 gimp_version=2.6
 install_gimp_version=2.0

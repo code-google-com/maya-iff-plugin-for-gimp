@@ -1,3 +1,9 @@
+gimp-mayaiff (1.0-4) unstable; urgency=low
+
+  * renamed as gimp-mayaiff
+
+ -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Fri, 17 Oct 2008 21:07:24 +0900
+
 gimp2.6-mayaiff (1.0-3) unstable; urgency=low
 
   * more upstream updates
