@@ -1,0 +1,51 @@
+#!/usr/bin/make -f
+
+package=gimp1.2-mayaiff
+object=MayaIFF
+gimp_version=1.2
+root=debian/tmp
+
+build:
+	$(checkdir)
+	gimptool --build source/$(object).c
+
+clean:
+	rm -fr *~ source/*~ $(root) debian/*~ debin/files* debian/substvars
+
+binary-indep:	checkroot build
+	$(checkdir)
+
+binary-arch:	checkroot build
+	rm -fr $(root)
+	install -d $(root)/DEBIAN\
+		-d $(root)/usr/share/doc/$(package)\
+		-d $(root)/usr/lib/gimp/$(gimp_version)/plug-ins\
+		-d $(root)/usr/share/gimp/scripts\
+		-d $(root)/usr/bin/
+	strip $(object)
+	cp $(object) $(root)/usr/lib/gimp/$(gimp_version)/plug-ins
+	cp README* $(root)/usr/share/doc/$(package)/.
+	cp ChangeLog $(root)/usr/share/doc/$(package)/changelog
+	gzip -9 $(root)/usr/share/doc/$(package)/changelog
+	cp debian/changelog $(root)/usr/share/doc/$(package)/changelog.Debian
+	gzip -9 $(root)/usr/share/doc/$(package)/changelog.Debian
+	cp debian/copyright $(root)/usr/share/doc/$(package)/.
+	dpkg-shlibdeps $(object)
+	rm $(object)
+	dpkg-gencontrol -isp
+	chown -R root.root $(root)
+	chmod -R g-ws $(root)
+	dpkg --build $(root) ..
+	rm -fr $(root)
+
+define checkdir
+	test -f source/$(object).c -a -f debian/rules
+endef
+
+binary:	binary-indep binary-arch
+
+checkroot:
+	$(checkdir)
+	test root = "`whoami`"
+
+.PHONY:	binary binary-arch binary-indep clean checkroot
