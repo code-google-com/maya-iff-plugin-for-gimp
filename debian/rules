@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
-package=gimp2.4-mayaiff
+package=gimp2.6-mayaiff
 object=MayaIFF
-gimp_version=2.3
+gimp_version=2.6
 install_gimp_version=2.0
 root=debian/tmp
 gimptool=gimptool-2.0

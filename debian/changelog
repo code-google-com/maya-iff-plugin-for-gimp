@@ -1,11 +1,11 @@
-gimp2.4-mayaiff (1.0-1) unstable; urgency=low
+gimp2.6-mayaiff (1.0-2) unstable; urgency=low
 
-  * test build (kill asserion in get_long)
+  * some upstream updates
+
+ -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Fri, 17 Oct 2008 11:47:43 +0900
+
+gimp2.6-mayaiff (1.0-1) unstable; urgency=low
+
+  * initial build for 2.6 withe better Makefile
 
  -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Tue, 17 Jan 2006 14:50:50 +0900
-
-gimp2.4-mayaiff (1.0-0) unstable; urgency=low
-
-  * rebuild for gimp-2.4 and rename the name
-
- -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Sat, 31 Dec 2005 11:30:08 +0900

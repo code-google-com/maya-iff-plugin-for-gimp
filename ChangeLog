@@ -1,3 +1,8 @@
+2008-10-17  Shuji Narazaki  <narazaki@cs.cis.nagasaki-u.ac.jp>
+
+	* src/MayaIFF.c: uses 'Autodesk' instead of 'Alias|Wavefront'
+	* src/Makefile: uses gimptool-2.0
+
 2006-01-17  Shuji Narazaki  <narazaki@cs.cis.nagasaki-u.ac.jp>
 
 	* src/MayaIFF.c (CHECK_TAG): use cast for str2long
