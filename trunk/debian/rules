@@ -1,16 +1,16 @@
 #!/usr/bin/make -f
 
-package=gimp1.2-mayaiff
+package=gimp2.0-mayaiff
 object=MayaIFF
-gimp_version=1.2
+gimp_version=2.0
 root=debian/tmp
 
 build:
 	$(checkdir)
-	gimptool --build source/$(object).c
+	gimptool-$(gimp_version) --build src/$(object).c
 
 clean:
-	rm -fr *~ source/*~ $(root) debian/*~ debin/files* debian/substvars
+	rm -fr *~ src/*~ $(root) debian/*~ debin/files* debian/substvars
 
 binary-indep:	checkroot build
 	$(checkdir)
@@ -39,7 +39,7 @@ binary-arch:	checkroot build
 	rm -fr $(root)
 
 define checkdir
-	test -f source/$(object).c -a -f debian/rules
+	test -f src/$(object).c -a -f debian/rules
 endef
 
 binary:	binary-indep binary-arch

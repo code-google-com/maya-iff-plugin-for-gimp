@@ -1,4 +1,0 @@
-Don't use make!
-The smartest way is of course:
-
-gimptool --install MayaIFF.c
