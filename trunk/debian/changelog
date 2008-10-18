@@ -1,3 +1,10 @@
+gimp-mayaiff (1.0-5) unstable; urgency=low
+
+  * non-numbered upstream update
+  * debian/control: add Conflicts and Replaces
+
+ -- Shuji Narazaki <narazaki@cs.cis.nagasaki-u.ac.jp>  Sat, 18 Oct 2008 10:16:53 +0900
+
 gimp-mayaiff (1.0-4) unstable; urgency=low
 
   * renamed as gimp-mayaiff
