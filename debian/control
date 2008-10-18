@@ -8,6 +8,8 @@ Package: gimp-mayaiff
 Architecture: i386 amd64
 Priority: optional
 Depends: libgimp2.0(>=2.6), gimp(>=2.6)
+Conflicts: gimp2.6-mayaiff, gimp2.4-mayaiff, gimp2.2-mayaiff, gimp2.0-mayaiff
+Replaces: gimp2.6-mayaiff
 Description: a gimp 2.4 plugin for reading/writing Alias|Wavefront Maya's IFF
  This plugin was written by Mike Taylor (mtaylor@aw.sgi.com). I modified to
  adapt to gimp-1.2, then to gimp-1.3, gimp-2.0 (now compiled for gimp2.6).

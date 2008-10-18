@@ -54,7 +54,7 @@
  *
  */
  
-static char ident[] = "@(#) GIMP Autodesk Maya IFF image file-plugin v1.3  2008-10-17--01";
+static char ident[] = "@(#) GIMP Autodesk Maya IFF image file-plugin v1.3 2008-10-18--01";
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -183,9 +183,9 @@ static void query ()
                           nsave_args, 0,
                           save_args, NULL);
 
-  gimp_register_magic_load_handler ("file_maya_iff_load", "iff,tdi", "", 
+  gimp_register_magic_load_handler ("file_maya_iff_load", "iff", "", 
 				    "8,string,CIMG");
-  gimp_register_save_handler ("file_maya_iff_save", "iff,tdi", "");
+  gimp_register_save_handler ("file_maya_iff_save", "iff", "");
 }
 
 static void run ( char *name, int nparams, GimpParam *param, int *nreturn_vals,
