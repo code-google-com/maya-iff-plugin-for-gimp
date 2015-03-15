@@ -1,0 +1,1 @@
+A Gimp plugin for reading/saving image as Autodesk Maya's IFF format
